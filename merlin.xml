@@ -3,25 +3,22 @@
 <remote  name="bb"
         fetch="https://bitbucket.org" />
 
-        <project name="FireLord1/android_device_motorola_merlin"                path="device/motorola/merlin"                   remote="github" revision="du" />
-        <project name="FireLord1/android_device_motorola_msm8916-common"        path="device/motorola/msm8916-common"           remote="github" revision="du" />
-        <project name="FireLord1/android_kernel_motorola_msm8916"               path="kernel/motorola/msm8916"                  remote="github" revision="cm-13.0" />
-        <project name="FireLord1/android_vendor_motorola_msm8916-common"        path="vendor/motorola/msm8916-common"           remote="github" revision="cm-13.0" />
-        <project name="FireLord1/android_vendor_motorola_merlin"                path="vendor/motorola/merlin"                   remote="github" revision="du" />
+        <project name="FireLord1/android_device_motorola_merlin"                path="device/motorola/merlin"                   remote="github" revision="du-n" />
+        <project name="FireLord1/android_device_motorola_msm8916-common"        path="device/motorola/msm8916-common"           remote="github" revision="du-n" />
+        <project name="FireLord1/android_kernel_motorola_msm8916" 		path="kernel/motorola/msm8916" 			remote="github" revision="cm-14.0-old" />
+	<project name="FireLord1/android_vendor_motorola"			path="vendor/motorola"				remote="github" revision="cm-14.1" />
 <!--    <project name="CyanogenMod/android_device_qcom_common"                  path="device/qcom/common"                       remote="github" revision="cm-13.0" /> -->
         <project name="CyanogenMod/android_external_bson"                       path="external/bson"                            remote="github" revision="cm-13.0" />
 
 <!-- UBER toolchain -->
-        <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
-        <remove-project name="arm-linux-androideabi-4.9" />
-        <remove-project name="android-prebuilts-gcc-linux-x86-arm-arm-eabi-4.9" />
+        <remove-project name="arm-eabi-4.8" />
+        <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
         <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" revision="master" remote="bb" />
         <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" revision="master" remote="bb" />
 <!-- CM stuff -->
-        <project name="CyanogenMod/android_external_connectivity" path="external/connectivity" remote="github" revision="cm-13.0" />
-        <project name="CyanogenMod/android_system_qcom" path="system/qcom" remote="github" revision="cm-13.0" />
-        <project name="CyanogenMod/android_hardware_ril" path="hardware/ril-caf" remote="github" revision="cm-13.0-caf" />
-        <project path="vendor/qcom/opensource/dataservices" name="DirtyUnicorns/android_vendor_qcom_opensource_dataservices" remote="github" revision="m-caf" />
-        <project path="hardware/qcom/fm" remote="github" name="DirtyUnicorns/android_hardware_qcom_fm" revision="m-caf" />
+        <project name="CyanogenMod/android_external_connectivity" path="external/connectivity" remote="github" revision="cm-14.0" />
+        <project name="CyanogenMod/android_system_qcom" path="system/qcom" remote="github" revision="cm-14.0" />
+        <project name="CyanogenMod/android_hardware_ril" path="hardware/ril-caf" remote="github" revision="cm-14.0-caf" />
+        <project path="hardware/qcom/fm" remote="github" name="DirtyUnicorns/android_hardware_qcom_fm" revision="n-caf" />
 
 </manifest>
